@@ -26,7 +26,7 @@ Este container funciona como uma instalação limpa do MySQL Workbench
 
 1. **Clone o repositório:**
    ```bash
-   git clone [https://github.com/Onnboy/docker-mysql-workbench.git](https://github.com/Onnboy/docker-mysql-workbench.git)
+   git clone https://github.com/Onnboy/docker-mysql-workbench
    cd docker-mysql-workbench
    cp .env.example .env
-   docker-compose up -d (padrão)
+   docker compose up -d (padrão)
