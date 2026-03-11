@@ -1,0 +1,14 @@
+services:
+  mysql-workbench:
+    image: lscr.io/linuxserver/mysql-workbench:latest
+    security_opt:
+      - seccomp:unconfined
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TIMEZONE}
+    volumes:
+      - ./config:/config
+    ports:
+      - "${PORT}:3000"
+    restart: unless-stopped
